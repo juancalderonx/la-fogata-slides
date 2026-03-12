@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -23,7 +24,7 @@ export default function Slide08Cierre({ id }: Props) {
       {/* Sticker sheet fondo */}
       <div className="absolute inset-0" style={{ zIndex: 0 }}>
         <img
-          src="/assets/sticker-sheet-mascota-la-fogata.png"
+          src={asset("assets/sticker-sheet-mascota-la-fogata.png")}
           alt=""
           className="w-full h-full object-cover select-none"
           draggable={false}
@@ -97,7 +98,7 @@ export default function Slide08Cierre({ id }: Props) {
         {/* Logo final */}
         <div className="animate-on-enter delay-4">
           <img
-            src="/assets/logo-social-club-mascota.png"
+            src={asset("assets/logo-social-club-mascota.png")}
             alt="La Fogata Social Club"
             className="w-32 md:w-40 select-none mx-auto glow-orange"
             style={{ opacity: 0.65 }}

@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -15,9 +16,9 @@ const colores = [
 ];
 
 const logos = [
-  { src: "/assets/logo-social-club-mascota.png", label: "Logo principal", desc: "Social Club — uso primario" },
-  { src: "/assets/logo-pack-la-fogata-v2.png", label: "Logo pack", desc: "Variantes horizontal + ícono" },
-  { src: "/assets/logo-tipografico-la-fogata.png", label: "Wordmark", desc: "Solo tipográfico — uso secundario" },
+  { src: asset("assets/logo-social-club-mascota.png"), label: "Logo principal", desc: "Social Club — uso primario" },
+  { src: asset("assets/logo-pack-la-fogata-v2.png"), label: "Logo pack", desc: "Variantes horizontal + ícono" },
+  { src: asset("assets/logo-tipografico-la-fogata.png"), label: "Wordmark", desc: "Solo tipográfico — uso secundario" },
 ];
 
 export default function Slide06Identidad({ id }: Props) {

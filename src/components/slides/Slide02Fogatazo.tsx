@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -122,7 +123,7 @@ export default function Slide02Fogatazo({ id }: Props) {
             }}
           />
           <img
-            src="/assets/logo-mascota-la-fogata.png"
+            src={asset("assets/logo-mascota-la-fogata.png")}
             alt="Mascota La Fogata"
             className="relative w-[280px] md:w-[380px] lg:w-[420px] glow-orange select-none"
             style={{ animation: "float 5s ease-in-out infinite" }}

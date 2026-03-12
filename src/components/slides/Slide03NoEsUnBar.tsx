@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -88,7 +89,7 @@ export default function Slide03NoEsUnBar({ id }: Props) {
 
           <div className="animate-on-enter delay-2">
             <img
-              src="/assets/logo-tipografico-la-fogata.png"
+              src={asset("assets/logo-tipografico-la-fogata.png")}
               alt="La Fogata"
               className="w-40 opacity-20 select-none"
               draggable={false}

@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -121,7 +122,7 @@ export default function Slide05Maco({ id }: Props) {
               }}
             />
             <img
-              src="/assets/hoja-estudio-mascota-volumen-2-v2.png"
+              src={asset("assets/hoja-estudio-mascota-volumen-2-v2.png")}
               alt="Maco — Hoja de estudio expresiones Vol. II"
               className="w-full rounded-2xl select-none relative"
               style={{
@@ -135,7 +136,7 @@ export default function Slide05Maco({ id }: Props) {
           {/* Fila inferior: expresiones v1 + mascota aislada */}
           <div className="grid grid-cols-2 gap-4 w-full">
             <img
-              src="/assets/hoja-estudio-mascota-expresiones.png"
+              src={asset("assets/hoja-estudio-mascota-expresiones.png")}
               alt="Maco — Expresiones"
               className="w-full rounded-xl select-none opacity-80 hover:opacity-100 transition-opacity duration-300"
               style={{
@@ -145,7 +146,7 @@ export default function Slide05Maco({ id }: Props) {
               draggable={false}
             />
             <img
-              src="/assets/logo-mascota-la-fogata.png"
+              src={asset("assets/logo-mascota-la-fogata.png")}
               alt="Maco — Logo"
               className="w-full rounded-xl select-none opacity-80 hover:opacity-100 transition-opacity duration-300"
               style={{

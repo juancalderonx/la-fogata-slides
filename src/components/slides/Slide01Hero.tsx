@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -40,7 +41,7 @@ export default function Slide01Hero({ id }: Props) {
         {/* Logo principal — el mapache con el wordmark */}
         <div className="animate-on-enter" style={{ animation: "float 6s ease-in-out infinite" }}>
           <img
-            src="/assets/logo-social-club-mascota.png"
+            src={asset("assets/logo-social-club-mascota.png")}
             alt="La Fogata Social Club"
             className="w-[340px] md:w-[420px] lg:w-[480px] glow-orange select-none"
             draggable={false}

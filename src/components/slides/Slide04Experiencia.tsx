@@ -1,5 +1,6 @@
 import { useSlideAnimation } from "@/lib/useSlideAnimation";
 import FireParticles from "@/components/ui/FireParticles";
+import { asset } from "@/lib/utils";
 
 interface Props {
   id: string;
@@ -7,32 +8,32 @@ interface Props {
 
 const experiences = [
   {
-    icon: "/assets/trago-fuego-icono.png",
+    icon: asset("assets/trago-fuego-icono.png"),
     title: "Eventos con DJ",
     desc: "Sets en vivo cada semana. La música no para.",
   },
   {
-    icon: "/assets/cumpleanos-fiesta-icono.png",
+    icon: asset("assets/cumpleanos-fiesta-icono.png"),
     title: "Cumpleaños VIP",
     desc: "Canciones dedicadas, shows y beneficios exclusivos para el cumpleañero.",
   },
   {
-    icon: "/assets/calendario-check-icono.png",
+    icon: asset("assets/calendario-check-icono.png"),
     title: "Reserva tu mesa",
     desc: "Fácil y rápido. Via WhatsApp o directamente en la web.",
   },
   {
-    icon: "/assets/menu-cocteles-icono.png",
+    icon: asset("assets/menu-cocteles-icono.png"),
     title: "Cócteles artesanales",
     desc: "Tragos con identidad. Recetas propias que saben a La Fogata.",
   },
   {
-    icon: "/assets/reloj-horario-icono.png",
+    icon: asset("assets/reloj-horario-icono.png"),
     title: "Horarios estratégicos",
     desc: "Abrimos cuando la noche empieza a ponerse buena.",
   },
   {
-    icon: "/assets/ubicacion-mapa-icono.png",
+    icon: asset("assets/ubicacion-mapa-icono.png"),
     title: "El punto de encuentro",
     desc: "Ese lugar al que siempre se vuelve y siempre se lleva a alguien nuevo.",
   },
